@@ -4,8 +4,8 @@ require File.expand_path('../lib/drone3/client/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Julien Ammous"]
   gem.email         = ["schmurfy@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{..}
+  gem.summary       = %q{...}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
@@ -15,5 +15,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Drone3::Client::VERSION
   
+  gem.add_dependency 'monitoring_protocols'
+  gem.add_dependency 'eventmachine',  '~> 1.0.3'
 
 end
