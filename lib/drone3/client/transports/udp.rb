@@ -22,8 +22,7 @@ module Drone3
       def send_msg(json)
         case @format
         when 'json'
-          # data = Zlib.deflate(json)
-          data =json
+          data = Zlib.deflate(json)
           send_datagram(data, @target, @port)
         end
       end
