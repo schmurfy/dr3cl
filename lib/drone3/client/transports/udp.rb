@@ -13,7 +13,6 @@ module Drone3
       
       
       def initialize(target, port, opts)
-        p [:opts, opts]
         @target = target
         @port   = port
         @format = opts[:format]
