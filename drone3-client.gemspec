@@ -16,6 +16,6 @@ Gem::Specification.new do |gem|
   gem.version       = Drone3::Client::VERSION
   
   gem.add_dependency 'monitoring_protocols'
-  gem.add_dependency 'eventmachine',  '~> 1.0.3'
+  gem.add_dependency 'eventmachine',  '>= 1.0.3'
 
 end
